@@ -5,11 +5,14 @@
   "main": "extension.js",
   "dependencies": {
     "eslint": "^7.5.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/PapyElGringo/material-shell/issues"
   },
-  "homepage": "https://github.com/PapyElGringo/material-shell#readme"
+  "homepage": "https://github.com/PapyElGringo/material-shell#readme",
+  "snyk": true
 }
